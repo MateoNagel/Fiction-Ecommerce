@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,600;1,6..12,300;1,6..12,500;1,6..12,600&family=Nunito:wght@700&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(19, 17, 17); /* Cambia el color de fondo según tu diseño */
+    height: auto;
+    padding: 10px 100px;
+}
+
+.logo img {
+    max-width: auto;
+    height: 100px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.logo img:hover{
+    transform: scale(1.2);
+}
+
+.nav-redes {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-redes p {
+    color: rgb(211, 31, 31); /* Cambia el color del texto según tu diseño */
+    margin-right: 15px;
+}
+
+.nav-redes li {
+    margin-right: 10px;
+}
+
+.nav-redes img {
+    max-width: 25px; /* Ajusta el tamaño de las imágenes según tu diseño */
+    height: auto;
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 0 5px; 
+}
+
+.nav-redes img:hover{
+    transform: scale(1.2);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(111, 113, 116); /* Cambia el color de fondo según tu diseño */
+    padding: 15px 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-right: 10px;
+}
+
+.nav-links a {
+    color: white; /* Cambia el color del texto según tu diseño */
+    text-decoration: none;
+    transition: all 0.5s;
+    padding: 0 65px;
+}
+
+.links .nav-links a:hover{
+    transform: scale(1.2);
+    color: red;
+}
+
+/* Estilos para hacerlo responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-redes {
+        margin-top: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
