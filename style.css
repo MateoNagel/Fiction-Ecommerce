@@ -4,13 +4,14 @@ body {
     font-family: 'Nunito', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: rgb(111, 113, 116);
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(19, 17, 17); /* Cambia el color de fondo según tu diseño */
+    background-color: rgb(19, 17, 17); 
     height: auto;
     padding: 10px 100px;
 }
@@ -35,7 +36,7 @@ body {
 }
 
 .nav-redes p {
-    color: rgb(211, 31, 31); /* Cambia el color del texto según tu diseño */
+    color: rgb(211, 31, 31); 
     margin-right: 15px;
 }
 
@@ -44,7 +45,7 @@ body {
 }
 
 .nav-redes img {
-    max-width: 25px; /* Ajusta el tamaño de las imágenes según tu diseño */
+    max-width: 25px; 
     height: auto;
     cursor: pointer;
     transition: all 0.3s;
@@ -59,7 +60,7 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    background-color: rgb(111, 113, 116); /* Cambia el color de fondo según tu diseño */
+    background-color: rgb(111, 113, 116);
     padding: 15px 0;
     margin: 0;
 }
@@ -69,7 +70,7 @@ body {
 }
 
 .nav-links a {
-    color: white; /* Cambia el color del texto según tu diseño */
+    color: white; 
     text-decoration: none;
     transition: all 0.5s;
     padding: 0 65px;
@@ -100,8 +101,20 @@ body {
         flex-direction: column;
         align-items: center; 
     }
-}
 
+    .container h2{
+        text-align: center;
+    }
+
+    .columnas{
+        width: 50%;
+    }
+
+    .categorias{
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 .marcas{
     text-align: center;
@@ -175,3 +188,56 @@ body {
 .slider__btn--right{
     right: 10px;    
 }
+
+.container{
+    margin: 0 auto;
+    max-width: 1180px;
+}
+
+.container h2{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.container .categorias{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categorias .columnas{
+    text-align: center;
+    width: 20%;
+}
+
+.categorias .columnas a{
+    background-color: white;
+    display: flex;
+    height: 200px;
+    font-size: 15px;
+    justify-content: center;
+    outline: 3px solid rgb(133, 126, 126);
+    text-decoration: none;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.categorias .columnas a:hover{
+    transform: scale(1.05);
+}
+
+.categorias .columnas a img{
+    padding: 60px 0 50px;
+    padding-top: 30px;
+}
+
+.categorias .columnas .cate-text{
+    padding-top: 170px;
+    position: absolute;
+    color: black;
+}
+
+
+
+
+
