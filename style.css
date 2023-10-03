@@ -107,13 +107,9 @@ body {
     }
 
     .columnas{
-        width: 50%;
+        margin: auto;
     }
 
-    .categorias{
-        flex-direction: column;
-        align-items: center;
-    }
 }
 
 .marcas{
@@ -190,7 +186,7 @@ body {
 }
 
 .container{
-    margin: 0 auto;
+    margin: auto;
     max-width: 1180px;
 }
 
@@ -207,7 +203,8 @@ body {
 
 .categorias .columnas{
     text-align: center;
-    width: 20%;
+    padding: 10px 15px;
+    width: 30%;
 }
 
 .categorias .columnas a{
@@ -216,7 +213,7 @@ body {
     height: 200px;
     font-size: 15px;
     justify-content: center;
-    outline: 3px solid rgb(133, 126, 126);
+    outline: 3px solid rgb(111, 113, 116);
     text-decoration: none;
     width: 100%;
     transition: all 0.5s;
@@ -231,10 +228,12 @@ body {
     padding-top: 30px;
 }
 
-.categorias .columnas .cate-text{
-    padding-top: 170px;
+.categorias .columnas a p{
+    padding-top: 140px;
+    font-size: 16px;
     position: absolute;
     color: black;
+    text-align: center;
 }
 
 
